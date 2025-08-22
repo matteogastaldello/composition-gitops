@@ -1,0 +1,14 @@
+apiVersion: v1
+data:
+  file1.txt: |
+    Content of file 1
+  file2.txt: |
+    Content of file 2
+  file3.txt: |
+    Content of file 3
+kind: ConfigMap
+metadata:
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  name: github-files-config-123
+  namespace: default
